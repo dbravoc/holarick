@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+// MiApi
+
 const Nav = () => {
   const [terminoBusqueda, setTerminoBusqueda] = useState('');
   const [personajes, setPersonajes] = useState([]);
