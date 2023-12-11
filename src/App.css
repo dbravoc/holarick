@@ -1,0 +1,139 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+  body {
+    font-family: 'Silkscreen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(220deg 13.33% 17.65%);
+  
+  }
+
+  .head {
+    background-color: rgb(40 40 40);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px #B2DF28;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    
+  }
+
+  .Header {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(220deg 13.33% 17.65%);
+  color: white;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: solid 1px #B2DF28;
+  padding: 4.5rem 0px;
+  background-color: rgb(40 40 40);
+
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.cta {
+  background-color: #B2DF28  ; /* Fondo azul */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 3px; /* Bordes redondeados */
+  text-decoration: none; /* Quitar subrayado del enlace */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Transición suave para el fondo */
+  border: solid #00B5CC 2px;
+  min-width: 100vh;
+
+
+}
+
+.cta:hover {
+  background-color: hsl(225deg 6.25% 25.1%);; 
+  text-decoration: none;
+  border: solid #B2DF28 2px;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+a {
+  font-weight: 500;
+  color: rgb(158, 158, 158)  ;
+  text-decoration: inherit;
+  padding: 10px;
+}
+
+a:hover {
+  color: #00B5CC
+  ;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+input {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 4.5rem;
+}
+
+.persona{
+  text-align: center;
+  background-color: hsl(225deg 6.25% 25.1%);
+  font-size: smaller;
+
+
+}
