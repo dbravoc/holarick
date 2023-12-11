@@ -15,7 +15,7 @@ const Nav = () => {
       })
       .then(data => {
         setPersonajes(data.results);
-        setResultadosFiltrados(data.results); // Actualiza aquí para mostrar todos los personajes inicialmente
+        setResultadosFiltrados(data.results);
       })
       .catch(error => console.error('Fetch error:', error));
   }, []);
@@ -27,7 +27,7 @@ const Nav = () => {
       );
       setResultadosFiltrados(filtrados);
     } else {
-      setResultadosFiltrados(personajes); // Muestra todos los personajes si no hay término de búsqueda
+      setResultadosFiltrados(personajes);
     }
   }, [terminoBusqueda, personajes]);
 
@@ -46,13 +46,8 @@ const Nav = () => {
       <div className='personajes'>
         {resultadosFiltrados.map((personaje) => (
           <div key={personaje.id} className='persona'>
-            <p>{personaje.name}</p>
-            <p>{personaje.status}</p>
-            <p>{personaje.species}</p>
-            <p>{personaje.episodes}</p>
-
-
-
+            <h3>{personaje.name}</h3>
+            <p>{personaje.status} - {personaje.species}</p>
             <img src={personaje.image} alt={`Imagen de ${personaje.name}`} />
           </div>
         ))}
